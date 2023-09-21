@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Entails State class and Base, instance of declarative_base()
+Entails class and Base, instance of declarative_base()
 """
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
@@ -11,7 +11,7 @@ Base = declarative_base(metadata=mymetadata)
 
 class State(Base):
     """
-    class state that in inherits from base
+    class state that inherits from base
     """
     __tablename__ = 'states'
     id = Column(Integer, unique=True, nullable=False, primary_key=True)
